@@ -1,17 +1,7 @@
 <?php 
 function aipm_allowed_block_types($allowed_block_types, $post) {
 
-    //default modules
-    $allowed_block_types = array(
-        //adding core modules
-        'core/block',
-        // 'core/image',
-        // 'core/html',
-        // 'core/video',
-        // 'core/youtube',
-        // 'core/vimeo',
-        // 'core/column',
-    );
+ 
     // Intended to restrict to just one block on my homepage template but does not
 if ( is_page_template('template_landing.php') ) {
     $allowed_block_types= array( 

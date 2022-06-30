@@ -27,8 +27,7 @@ $image = get_field('image');
                                 <div class="hero-banner-message">
                                     <div class="grid-x">
                                         <div class="cell medium-6">
-                                            <h1 class="heading" data-aos="fade-up" data-aos-easing="linear"
-                                                data-aos-duration="600">
+                                            <h1 data-aos="fade-up" data-aos-easing="linear" data-aos-duration="600">
                                                 <?php echo $heading; ?>
                                             </h1>
                                             <h3 class="heading-xs color-theme">

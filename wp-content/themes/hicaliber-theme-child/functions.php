@@ -14,3 +14,4 @@ require_once( get_stylesheet_directory() . '/page-content-builder/assets/functio
 
 require get_stylesheet_directory() . '/inc/module-register.php';
 require get_stylesheet_directory() . '/inc/custom-block-categories.php';
+require get_stylesheet_directory() . '/inc/module-restriction.php';
