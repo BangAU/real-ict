@@ -2225,4 +2225,14 @@ main.sitecontent a {
 
 }
 
+main.sitecontent .hero.gallery-background-banner .hero-banner-message h1 {
+    line-height: 1.1em;
+    padding-bottom: 0;
+}
+
+
+main.sitecontent .heading {
+    font-size: 28px;
+    font-weight: 600;
+}
 /*# sourceMappingURL=index.css.map */
