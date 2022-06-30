@@ -1,0 +1,67 @@
+body #login {
+       background-color: #FFF !important;
+    padding: 46px 46px 56px;
+    width: 420px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0, .4);
+    position:relative;
+}
+body.login {
+    display: flex;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.login h1 a {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    background-size: contain;
+    background-position: center;
+}
+body.login.login-layout-1 {
+    width: calc(100% - 488px);
+}
+body.login-layout-1 #login {
+    position: absolute;
+    right: 0;
+    border-radius: 0;
+    height: 100%;
+    padding: 8% 34px 0;
+}
+
+body.login-dark,
+body.login-dark.login #backtoblog a, 
+body.login-dark.login #nav a {
+    color: #FFF;
+}
+body.login-dark #login {
+    background-color: #1b1b1b !important;
+    color: #FFF;
+}
+
+
+
+body.login #login form {
+    border: 1px solid #dcdcdc;
+    box-shadow: none;
+}
+
+body.login-dark #login form {
+    background-color: transparent;
+    border: none;
+    color: #FFF;
+}
+
+.login-disclaimer {
+    position: absolute;
+    bottom: 25px;
+    width: 100%;
+    text-align: center;
+    left: 0;
+}
+
+body.login.login-layout-1  .login-disclaimer {
+    bottom: 165px;
+}

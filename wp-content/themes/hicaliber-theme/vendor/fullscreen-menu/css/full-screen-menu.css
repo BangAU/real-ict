@@ -1,0 +1,128 @@
+/**********************
+Main Tweak
+**********************/
+
+
+/* Overlay style */
+.fullscreen-menu-overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1900;
+	background: rgba(0, 0, 0, 0.90);
+}
+.fullscreen-menu-overlay.overlay-scale .menu  li:not(.menu-text) a {
+	color: #fff;
+}
+.fullscreen-menu-overlay .is-accordion-submenu-parent>a:after {
+	    border-color: #FFF transparent transparent;
+}
+.fullscreen-menu-overlay .overlay-close {
+	position: absolute;
+    top: 38px;
+    color: #d4d4d4;
+    font-size: 36px;
+    height: 43px;
+    right: 17px;
+}
+
+
+
+/* Overlay closing cross */
+.fullscreen-menu-overlay .fullscreen-menu-overlay-close {
+	font-size: 22px;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	overflow: hidden;
+	color: #FFF;
+	outline: none;
+	z-index: 100;
+	border: 1px solid #FFF;
+	height: 30px;
+	width: 30px;
+}
+
+/* Menu style */
+.fullscreen-menu-overlay nav {
+	text-align: center;
+	position: relative;
+}
+
+.fullscreen-menu-overlay ul {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	display: inline-block;
+	height: 100%;
+	position: relative;
+}
+
+.fullscreen-menu-overlay ul li {
+	display: block;	
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.fullscreen-menu-overlay ul li a {
+	font-size: 30px;
+	font-weight: 500;
+	display: block;
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
+}
+
+
+/* Effects */
+.overlay-scale {
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transform: scale(0.9);
+	transform: scale(0.9);
+	-webkit-transition: -webkit-transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+	transition: transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+}
+
+.overlay-scale.open {
+	visibility: visible;
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);	
+	-webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
+	transition: transform 0.4s, opacity 0.4s;
+}
+
+@media screen and (max-height: 30.5em) {
+	.fullscreen-menu-overlay nav {
+		font-size: 34px;
+	}
+
+}
+
+.fullscreen-menu-overlay .menu.medium-horizontal > li,
+.subpage .fullscreen-menu-overlay .menu.vertical>li {
+	width: 100%;
+	display: block;
+}
+
+.overlay-scale .menu > li:not(.menu-text) > a {
+	padding: 8px;
+	font-size: 21px;
+	font-weight: 500;
+	line-height: 1;
+	text-transform: uppercase;
+}
+
+.overlay-scale .menu .submenu li a {
+	font-size: 16px;
+}
+
+@media (min-width: 641px) { 
+	.overlay-scale .menu .submenu {
+		    background-color: transparent;
+    text-align: center;
+    border: none !important;
+	}
+}

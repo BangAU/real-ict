@@ -1,0 +1,1 @@
+<?php echo $pv::video_section( _get_field_value('prj_video'), _get_field_value('video_details'), _get_field_value('hide_section') ); ?>
