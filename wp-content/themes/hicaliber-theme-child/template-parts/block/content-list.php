@@ -11,7 +11,7 @@ $heading = get_field('heading');
 $sub_heading = get_field('sub_heading');
 
 ?>
-<section class="page-element default-width ethernet-feat">
+<section class="page-element default-width">
     <div class="inner-section">
         <div class="grid-container">
             <div class="max-width--750">

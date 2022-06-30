@@ -35,7 +35,7 @@ if( $image_alignment == 'left' ) {
 </section>
 <?php } elseif ($image_alignment == 'right') {  ?>
 
-<section class="page-element default-width enterprise-transform">
+<section class="page-element default-width">
     <div class="inner-section">
         <div class="grid-container">
             <div class="row">
