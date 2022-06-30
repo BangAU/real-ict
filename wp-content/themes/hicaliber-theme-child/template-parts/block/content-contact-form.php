@@ -19,12 +19,14 @@ $shortcode = get_field('shortcode');
     <div class="inner-section">
         <div class="grid-container">
             <div class="text-center max-width--750 mx-auto">
-                <h3 class="heading-sm color-theme"><?php echo $sub_heading; ?></h3>
-                <h2 class="heading font-weight-normal"><?php echo $heading; ?></h2>
-                <p><?php echo $blurb; ?></p>
+                <h3 class="heading-sm color-theme" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="600">
+                    <?php echo $sub_heading; ?></h3>
+                <h2 class="heading font-weight-normal" data-aos="fade-up" data-aos-easing="linear"
+                    data-aos-duration="800"><?php echo $heading; ?></h2>
+                <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000"><?php echo $blurb; ?></div>
             </div>
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1200">
                     <img src="<?php echo $image['url'] ?>" alt="" class="w-100">
                 </div>
                 <div class="col-lg-6">

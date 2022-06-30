@@ -17,4 +17,8 @@ jQuery(document).ready(function($) {
 //       $('#label_11_40_3 .price.interval-price').html('$199 <span>per Month</span>');
 //       $('#label_11_40_3 .price.setup-price').html('$999 <span>Setup Fee</span>');
 //   }
+
+
 });
+
+  

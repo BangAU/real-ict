@@ -27,22 +27,28 @@ $image = get_field('image');
                                 <div class="hero-banner-message">
                                     <div class="grid-x">
                                         <div class="cell medium-6">
-                                            <h2 class="heading">
+                                            <h2 class="heading" data-aos="fade-up" data-aos-easing="linear"
+                                                data-aos-duration="600">
                                                 <?php echo $heading; ?>
                                             </h2>
                                             <h3 class="heading-xs color-theme">
-                                                <h3 class="heading-xs color-theme"><?php echo $sub_heading; ?></h3>
+                                                <h3 class="heading-xs color-theme" data-aos="fade-up"
+                                                    data-aos-easing="linear" data-aos-duration="800">
+                                                    <?php echo $sub_heading; ?></h3>
                                             </h3>
-                                            <p><?php echo $blurb; ?></p>
-                                            <div class="hic-button-wrap">
+                                            <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
+                                                <?php echo $blurb; ?></div>
+                                            <div class="hic-button-wrap" data-aos="fade-up" data-aos-easing="linear"
+                                                data-aos-duration="1200">
                                                 <a style="background: #00aeef; color: #fff;"
                                                     href="<?php echo $button_link['url'] ?>" class="button"
                                                     tabindex="0"><?php echo $button_link['title'] ?></a>
 
                                             </div>
                                         </div>
-                                        <div class="cell medium-6"><img loading="lazy"
-                                                class="alignnone size-full wp-image-3556"
+                                        <div class="cell medium-6" data-aos="fade-left" data-aos-easing="linear"
+                                            data-aos-duration="600">
+                                            <img loading="lazy" class="alignnone size-full wp-image-3556"
                                                 src="<?php echo $image['url'] ?>" alt="" width="1378" height="1162">
                                         </div>
                                     </div>

@@ -19,11 +19,14 @@ if( $image_alignment == 'left' ) {
         <div class="grid-container">
             <div class="row">
                 <div class="col-lg-6">
-                    <h2 class="heading"><?php echo $heading; ?></h2>
-                    <h3 class="heading-xs color-theme"><?php echo $sub_heading; ?></h3>
-                    <?php echo $blurb; ?>
+                    <h2 class="heading" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="600">
+                        <?php echo $heading; ?></h2>
+                    <h3 class="heading-xs color-theme" data-aos="fade-up" data-aos-easing="linear"
+                        data-aos-duration="800"><?php echo $sub_heading; ?></h3>
+                    <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000"> <?php echo $blurb; ?>
+                    </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="600">
                     <img src="<?php echo $image['url'] ?>" alt="" class="w-100">
                 </div>
             </div>
@@ -36,13 +39,16 @@ if( $image_alignment == 'left' ) {
     <div class="inner-section">
         <div class="grid-container">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="600">
                     <img src="<?php echo $image['url'] ?>" alt="" class="w-100">
                 </div>
                 <div class="col-lg-6">
-                    <h2 class="heading"><?php echo $heading; ?></h2>
-                    <h3 class="heading-xs color-theme"><?php echo $sub_heading; ?></h3>
-                    <?php echo $blurb; ?>
+                    <h2 class="heading" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="800">
+                        <?php echo $heading; ?></h2>
+                    <h3 class="heading-xs color-theme" data-aos="fade-up" data-aos-easing="linear"
+                        data-aos-duration="1000"><?php echo $sub_heading; ?></h3>
+                    <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1200"> <?php echo $blurb; ?>
+                    </div>
                 </div>
             </div>
         </div>

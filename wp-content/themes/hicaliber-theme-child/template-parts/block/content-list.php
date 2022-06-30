@@ -15,17 +15,21 @@ $sub_heading = get_field('sub_heading');
     <div class="inner-section">
         <div class="grid-container">
             <div class="max-width--750">
-                <h2 class="heading font-weight-normal"><?php echo $heading; ?></h2>
-                <p><?php echo $sub_heading; ?></p>
+                <h2 class="heading font-weight-normal" data-aos="fade-up" data-aos-easing="linear"
+                    data-aos-duration="400"><?php echo $heading; ?></h2>
+                <p data-aos="fade-up" data-aos-easing="linear" data-aos-duration="600"><?php echo $sub_heading; ?></p>
             </div>
             <div class="row">
-                <?php if(have_rows('list_repeater')):
+                <?php 
+                $time = 100;
+                if(have_rows('list_repeater')):
                     while(have_rows('list_repeater')): the_row(); 
                     $icon = get_sub_field('icon');
                     $blurb = get_sub_field('blurb');
-
+                    $time = $time + 300;
                     ?>
-                <div class="col-lg-6">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="<?php echo $time; ?>"
+                    data-aos-duration="<?php echo $time; ?>">
                     <div class="ethernet-feat__card">
                         <div class="ethernet-feat__card-icon">
                             <img src="<?php echo $icon['url'] ?>" alt="">

@@ -90,7 +90,9 @@
 				}
 			} 
 		?>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <?php 
+	
 	if ( is_page_template( 'template_landing.php' ) ) { ?>
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/css/index.css">
     <?php } ?>
