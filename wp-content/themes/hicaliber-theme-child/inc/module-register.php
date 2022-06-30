@@ -42,8 +42,7 @@ function aipm_acf_init() {
 		));
 		acf_register_block(array(
 			'name'				=> 'list',
-			'title'				=> __('
-			'),
+			'title'				=> __('List'),
 			'description'		=> __('List'),
 			'render_callback'	=> 'aipm_acf_module_template_block_render_callback',
 			'icon'              => 'superhero',
