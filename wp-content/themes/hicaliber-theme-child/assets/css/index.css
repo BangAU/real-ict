@@ -2149,6 +2149,13 @@ a:hover {
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%)
     }
+
+    .cust-banner [class*="col-"]:last-child {
+        -webkit-box-ordinal-group: 0;
+        -webkit-order: -1;
+        -ms-flex-order: -1;
+        order: -1
+    }
 }
 
 .cust-banner .heading {
@@ -2208,6 +2215,13 @@ a:hover {
 @media (max-width: 991px) {
     .keep-pace {
         padding: 45px 0
+    }
+
+    .keep-pace [class*="col-"]:last-child {
+        -webkit-box-ordinal-group: 0;
+        -webkit-order: -1;
+        -ms-flex-order: -1;
+        order: -1
     }
 }
 
@@ -2331,7 +2345,16 @@ a:hover {
 
 @media (max-width: 991px) {
     .enterprise-ethernet {
-        padding: 45px 0
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-flow: column;
+        -ms-flex-flow: column;
+        flex-flow: column;
+        padding: 45px 0 0
     }
 }
 
@@ -2350,6 +2373,13 @@ a:hover {
 @media (max-width: 991px) {
     .carrier-service {
         padding: 45px 0
+    }
+
+    .carrier-service [class*="col-"]:last-child {
+        -webkit-box-ordinal-group: 0;
+        -webkit-order: -1;
+        -ms-flex-order: -1;
+        order: -1
     }
 }
 
@@ -2385,6 +2415,7 @@ a:hover {
         padding-right: 31px
     }
 }
+
 
 
 
