@@ -28,8 +28,7 @@ $sub_heading = get_field('sub_heading');
                     $blurb = get_sub_field('blurb');
                     $time = $time + 300;
                     ?>
-                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="<?php echo $time; ?>"
-                    data-aos-duration="<?php echo $time; ?>">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-duration="<?php echo $time; ?>">
                     <div class="ethernet-feat__card">
                         <div class="ethernet-feat__card-icon">
                             <img src="<?php echo $icon['url'] ?>" alt="">

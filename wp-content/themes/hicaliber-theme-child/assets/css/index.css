@@ -1865,9 +1865,21 @@ a:hover {
     font-weight: 400
 }
 
+@media (max-width: 991px) {
+    .heading-lg {
+        font-size: 24px
+    }
+}
+
 .heading-sm {
     font-size: 24px;
     font-weight: 400
+}
+
+@media (max-width: 991px) {
+    .heading-sm {
+        font-size: 20px
+    }
 }
 
 .heading-xs {
@@ -2145,6 +2157,12 @@ a:hover {
     margin-bottom: 18px
 }
 
+@media (max-width: 991px) {
+    .cust-banner .heading {
+        font-size: 36px
+    }
+}
+
 .cust-banner .heading-xs {
     font-size: 22px;
     font-weight: 700;
@@ -2170,7 +2188,7 @@ a:hover {
 
 @media (max-width: 991px) {
     .lvlup-cta {
-        padding: 60px 0
+        padding: 45px 0
     }
 }
 
@@ -2183,31 +2201,31 @@ a:hover {
     margin-bottom: 31px
 }
 
-.keep-pace .keep-pace {
-    padding: 27px 0 84px
+.keep-pace {
+    padding: 27px 0 46px
 }
 
 @media (max-width: 991px) {
-    .keep-pace .keep-pace {
-        padding: 60px 0
+    .keep-pace {
+        padding: 45px 0
     }
 }
 
-.keep-pace .keep-pace .heading {
+.keep-pace .heading {
     margin-bottom: 11px
 }
 
-.keep-pace .keep-pace .heading-xs {
+.keep-pace .heading-xs {
     margin-bottom: 21px
 }
 
 .enterprise-transform {
-    padding: 84px 0 156px
+    padding: 46px 0 76px
 }
 
 @media (max-width: 991px) {
     .enterprise-transform {
-        padding: 60px 0
+        padding: 45px 0
     }
 }
 
@@ -2219,33 +2237,13 @@ a:hover {
     margin-bottom: 18px
 }
 
-.enterprise-ethernet {
-    padding: 104px 0 0;
-    color: #fff;
-    background-color: #174279
-}
-
-@media (max-width: 991px) {
-    .enterprise-ethernet {
-        padding: 60px 0
-    }
-}
-
-.enterprise-ethernet .heading {
-    margin-bottom: 32px
-}
-
-.enterprise-ethernet .heading-xs {
-    margin-bottom: 75.4px
-}
-
 .ethernet-feat {
-    padding: 156px 0 120px
+    padding: 76px 0 120px
 }
 
 @media (max-width: 991px) {
     .ethernet-feat {
-        padding: 60px 0
+        padding: 45px 0
     }
 }
 
@@ -2284,10 +2282,10 @@ a:hover {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start
 }
 
 .ethernet-feat__card-icon {
@@ -2325,13 +2323,33 @@ a:hover {
     flex: auto
 }
 
+.enterprise-ethernet {
+    padding: 104px 0 0;
+    color: #fff;
+    background-color: #174279
+}
+
+@media (max-width: 991px) {
+    .enterprise-ethernet {
+        padding: 45px 0
+    }
+}
+
+.enterprise-ethernet .heading {
+    margin-bottom: 32px
+}
+
+.enterprise-ethernet .heading-xs {
+    margin-bottom: 75.4px
+}
+
 .carrier-service {
     padding: 120px 0 224px
 }
 
 @media (max-width: 991px) {
     .carrier-service {
-        padding: 60px 0
+        padding: 45px 0
     }
 }
 
@@ -2346,7 +2364,7 @@ a:hover {
 
 @media (max-width: 991px) {
     .contact-eligibility {
-        padding: 60px 0
+        padding: 45px 0
     }
 }
 
@@ -2367,6 +2385,9 @@ a:hover {
         padding-right: 31px
     }
 }
+
+
+
 
 
 
