@@ -15,7 +15,7 @@ $shortcode = get_field('shortcode');
 //test
 ?>
 
-<section id="book-now" class="page-element default-width contact-eligibility">
+<section id="book-now" class="page-element default-width page-section contact-eligibility">
     <div class="inner-section">
         <div class="grid-container">
             <div class="text-center max-width--750 mx-auto">

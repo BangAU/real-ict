@@ -14,7 +14,7 @@ $image_alignment = get_field('image_alignment');
 $image = get_field('image');
 if( $image_alignment == 'left' ) {
 ?>
-<section class="page-element default-width keep-pace">
+<section class="page-element default-width page-section keep-pace">
     <div class="inner-section">
         <div class="grid-container">
             <div class="row">

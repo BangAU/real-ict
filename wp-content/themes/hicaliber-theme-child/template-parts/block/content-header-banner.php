@@ -14,7 +14,7 @@ $button_link = get_field('button_link');
 $image = get_field('image');
 
 ?>
-<section class="hero gallery-background-banner default-height text-left">
+<section class="hero gallery-background-banner default-height page-section text-left">
     <div class="inner-hero">
         <div class="hero-main hero-carousel-type">
             <div class="hero-slider">

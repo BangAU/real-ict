@@ -299,6 +299,12 @@
     margin: -12px -24px
 }
 
+@media (max-width: 991px) {
+    .row {
+        margin: -12px
+    }
+}
+
 .col,
 .col-1,
 .col-10,
@@ -373,6 +379,82 @@
     width: 100%;
     min-height: 1px;
     padding: 12px 24px
+}
+
+@media (max-width: 991px) {
+
+    .col,
+    .col-1,
+    .col-10,
+    .col-11,
+    .col-12,
+    .col-2,
+    .col-3,
+    .col-4,
+    .col-5,
+    .col-6,
+    .col-7,
+    .col-8,
+    .col-9,
+    .col-auto,
+    .col-lg,
+    .col-lg-1,
+    .col-lg-10,
+    .col-lg-11,
+    .col-lg-12,
+    .col-lg-2,
+    .col-lg-3,
+    .col-lg-4,
+    .col-lg-5,
+    .col-lg-6,
+    .col-lg-7,
+    .col-lg-8,
+    .col-lg-9,
+    .col-lg-auto,
+    .col-md,
+    .col-md-1,
+    .col-md-10,
+    .col-md-11,
+    .col-md-12,
+    .col-md-2,
+    .col-md-3,
+    .col-md-4,
+    .col-md-5,
+    .col-md-6,
+    .col-md-7,
+    .col-md-8,
+    .col-md-9,
+    .col-md-auto,
+    .col-sm,
+    .col-sm-1,
+    .col-sm-10,
+    .col-sm-11,
+    .col-sm-12,
+    .col-sm-2,
+    .col-sm-3,
+    .col-sm-4,
+    .col-sm-5,
+    .col-sm-6,
+    .col-sm-7,
+    .col-sm-8,
+    .col-sm-9,
+    .col-sm-auto,
+    .col-xl,
+    .col-xl-1,
+    .col-xl-10,
+    .col-xl-11,
+    .col-xl-12,
+    .col-xl-2,
+    .col-xl-3,
+    .col-xl-4,
+    .col-xl-5,
+    .col-xl-6,
+    .col-xl-7,
+    .col-xl-8,
+    .col-xl-9,
+    .col-xl-auto {
+        padding: 12px
+    }
 }
 
 .col {
@@ -2030,6 +2112,58 @@ a:hover {
     opacity: 1
 }
 
+.cust-banner {
+    padding: 227px 0 174px
+}
+
+.cust-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #EFF6FE;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 100%)
+}
+
+@media (max-width: 991px) {
+    .cust-banner {
+        padding: 60px 0
+    }
+
+    .cust-banner::before {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%)
+    }
+}
+
+.cust-banner .heading {
+    font-size: 44px;
+    font-weight: 400;
+    margin-bottom: 18px
+}
+
+.cust-banner .heading-xs {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 4px
+}
+
+.cust-banner p {
+    font-size: 20px;
+    margin-bottom: 0
+}
+
+.cust-banner p:not(:last-child) {
+    margin-bottom: 31px
+}
+
+.cust-banner .btn-theme {
+    margin-top: 18px
+}
+
 .lvlup-cta {
     padding: 112px 0 139px
 }
@@ -2106,7 +2240,7 @@ a:hover {
 }
 
 .ethernet-feat {
-    padding: 0 0 120px
+    padding: 156px 0 120px
 }
 
 @media (max-width: 991px) {
@@ -2121,20 +2255,26 @@ a:hover {
 
 .ethernet-feat .row {
     margin-top: 52px;
-    margin-left: -44px;
-    margin-right: -44px;
-    margin-bottom: -92px
+    margin-bottom: -22px
+}
+
+@media (min-width: 992px) {
+    .ethernet-feat .row {
+        margin-left: -44px;
+        margin-right: -44px;
+        margin-bottom: -92px
+    }
 }
 
 .ethernet-feat [class*="col-"] {
-    padding-left: 44px;
-    padding-right: 44px;
-    padding-bottom: 92px
+    padding-bottom: 22px
 }
 
-@media (max-width: 991px) {
+@media (min-width: 992px) {
     .ethernet-feat [class*="col-"] {
-        padding-bottom: 22px
+        padding-left: 44px;
+        padding-right: 44px;
+        padding-bottom: 92px
     }
 }
 
@@ -2147,8 +2287,7 @@ a:hover {
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
-    /* align-items: center */
-    align-items: flex-start;
+    align-items: center
 }
 
 .ethernet-feat__card-icon {
@@ -2212,15 +2351,25 @@ a:hover {
 }
 
 .contact-eligibility .row {
-    margin-top: 66px;
-    margin-left: -31px;
-    margin-right: -31px
+    margin-top: 66px
 }
 
-.contact-eligibility [class*="col-"] {
-    padding-left: 31px;
-    padding-right: 31px
+@media (min-width: 992px) {
+    .contact-eligibility .row {
+        margin-left: -31px;
+        margin-right: -31px
+    }
 }
+
+@media (min-width: 992px) {
+    .contact-eligibility [class*="col-"] {
+        padding-left: 31px;
+        padding-right: 31px
+    }
+}
+
+
+
 main.sitecontent a {
     color: #03aeef;
 
@@ -2236,4 +2385,5 @@ main.sitecontent .heading {
     font-size: 28px;
     font-weight: 600;
 }
+
 /*# sourceMappingURL=index.css.map */

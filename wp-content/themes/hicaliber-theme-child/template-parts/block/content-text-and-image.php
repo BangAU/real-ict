@@ -13,7 +13,7 @@ $image = get_field('image');
 
 ?>
 
-<section class="page-element default-width enterprise-ethernet">
+<section class="page-element default-width page-section enterprise-ethernet">
     <div class="inner-section">
         <div class="grid-container">
             <div class="text-center max-width--750 mx-auto">
